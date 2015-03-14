@@ -1,0 +1,32 @@
+﻿@font-face {
+    font-family: tradegothic;
+    src: url('../tradegothic.ttf') format('truetype');
+}
+
+body {
+    background-color:#293759;
+}
+
+canvas {
+    outline: 0px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+*{
+    outline:none;
+    text-decoration: none;
+}
+
+div {
+    z-index: -3;
+    font-size: 7em;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-family: tradegothic;
+}
