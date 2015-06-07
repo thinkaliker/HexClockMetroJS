@@ -12,10 +12,31 @@
     <!-- HexClock.Windows references -->
     <link href="/css/default.css" rel="stylesheet" />
     <script src="/js/default.js"></script>
-    <script src="/js/processing.js"></script>
+    <script src="/js/navigator.js"></script>
+
 </head>
 <body>
-    <canvas id="HexClock" data-processing-sources="HexClock.pde"></canvas>
-    <div id="loading">LOADING</div>
+    <div id="navbar" data-win-control="WinJS.UI.NavBar">
+        <div id="globalNav" data-win-control="WinJS.UI.NavBarContainer">
+            <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{
+                    label: 'Default',
+                    icon: WinJS.UI.AppBarIcon.clock,
+                    location: '/pages/normal.html',
+                    splitButton: false
+                    }">
+            </div>
+            <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{
+                    label: 'Scaled',
+                    icon: WinJS.UI.AppBarIcon.clock,
+                    location: '/pages/scaled.html',
+                    splitButton: false
+                    }">
+            </div>
+        </div>
+    </div>
+    <div id="contenthost"
+         data-win-control="Application.PageControlNavigator"
+         data-win-options="{home: '/pages/normal.html'}">
+    </div>
 </body>
 </html>

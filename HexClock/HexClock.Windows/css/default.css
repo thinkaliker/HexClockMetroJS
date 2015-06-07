@@ -4,12 +4,11 @@
 }
 
 body {
-    background-color:#293759;
+    background-color: #293759;
 }
 
-canvas {
+.clock {
     outline: 0px;
-    position: absolute;
     left: 0px;
     top: 0px;
     width: 100%;
@@ -21,12 +20,18 @@ canvas {
     text-decoration: none;
 }
 
-div {
+
+#contenthost {
     z-index: -3;
-    font-size: 7em;
+    font-size: 9em;
     position:absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     font-family: tradegothic;
+    text-transform: uppercase;
+}
+
+#navbar {
+    background-color: #808080;
 }
