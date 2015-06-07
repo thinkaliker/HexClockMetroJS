@@ -1,2 +1,2 @@
-# HexClockMetroPJS
-HexClock for Windows 8+ using ProcessingJS
+# HexClockMetroJS
+HexClock for Windows 8+ using JavaScript (jQuery)
